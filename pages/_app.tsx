@@ -63,6 +63,7 @@ function MyApp({ Component, pageProps }: AppProps) {
               !router.route.includes("/preguntas-frecuentes") &&
               !router.route.includes("/login") &&
               !router.route.includes("/noticias") &&
+              !router.route.includes("/tienda-universitaria") &&
               router.route !== "/" && (
                 <Asistente
                   href="/preguntas-frecuentes"

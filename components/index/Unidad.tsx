@@ -17,6 +17,7 @@ import {
   faGraduationCap,
   faBabyCarriage,
   faUniversalAccess,
+  faShoppingCart,
 } from "@fortawesome/free-solid-svg-icons";
 
 import ScrollMenu from "react-horizontal-scrolling-menu";
@@ -31,6 +32,7 @@ export const Unidad = () => {
     { name: "item4" },
     { name: "item5" },
     { name: "item6" },
+    { name: "item7" },
   ];
   const Arrow = ({ text, className }) => {
     return <div className={className}>{text}</div>;
@@ -149,6 +151,16 @@ export const Unidad = () => {
           </MDBCardBody>
         </MDBCard>
       </MDBCol>,
+      <MDBCol key="7">
+      <MDBCard className="align-items-center text-center my-2">
+        <FontAwesomeIcon size="6x" icon={faShoppingCart}></FontAwesomeIcon>
+        <MDBCardBody>
+          <MDBCardTitle>
+            <Link href="/tienda-universitaria/">Tienda Universitaria</Link>
+          </MDBCardTitle>
+        </MDBCardBody>
+      </MDBCard>
+    </MDBCol>,
     ];
   };
 

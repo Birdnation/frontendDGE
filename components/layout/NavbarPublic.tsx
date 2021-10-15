@@ -16,6 +16,7 @@ import {
   faStarOfLife,
   faUniversalAccess,
   faUniversity,
+  faShoppingCart,
 } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
@@ -251,6 +252,23 @@ export const NavbarPublic = ({ children }: any) => {
                   <Dropdown.Item eventKey="8-4">Link 3</Dropdown.Item>
                 </Link>
               </Dropdown>
+
+              <Link passHref href="/tienda-universitaria">
+                <Nav.Item
+                  className="sidenav__color"
+                  icon={
+                    <FontAwesomeIcon
+                      className="rs-icon"
+                      icon={faShoppingCart}
+                      size="1x"
+                    />
+                  }
+                  eventKey="1"
+                >
+                  Tienda Universitaria
+                </Nav.Item>
+              </Link>
+
               <hr className="hr-success my-0" />
               <Nav.Item
                 className="sidenav__color"
@@ -282,6 +300,7 @@ export const NavbarPublic = ({ children }: any) => {
                   Instagram DGE
                 </Link>
               </Nav.Item>
+
             </Nav>
           </Sidenav.Body>
         </Sidenav>
